@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiwind css</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens:{
+                sm:'480px',
+                md:'768px',
+                lg:'976px',
+                xl:'1440px'
+            },
+            extend: {
+              colors: {
+                mygreen:'#004c3f',
+                mygrey: '#6b7177',
+                myblack: '#222',
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+<body>
+    
+    <nav style="font-family:'Noto Sans Jp;"class="fixed top-0 w-{100%] bg-white flex gap-x-24 items-center text-nav py-2.5 justify-around">
+    <div class="flex gap-x-8 items-center">
+        <svg class="icon" aria-labelledby="icon-logos-shopify-black-32-title" role="img"><title id="icon-logos-shopify-black-32-title">Shopify</title> <use xlink:href="#logos-shopify-black"></use> </svg>
+        <a href="#">Start <span class="text-xs">&#8964</span></a>
+        <a href="#">Sell <span class="text-xs">&#8964</span></a>
+        <a href="#">Market <span class="text-xs">&#8964</span></a>
+        <a href="#">Manage <span class="text-xs">&#8964</span></a>
+    </div>
+    </nav>
+    <div class="flex gap-x-8 items-center">
+        <a href="#">Pricing </a>
+        <a href="#">Learn <span class="text-xs">&#8964</span></a>
+        <a href="#">Log in </a>
+        <button class="bg-mygreen font-semibold text-white px-5 py-2 rounded-md shadow-grey-650/50">Try for free</button>
+
+    </div>
+    
+    
+    
+</body>
+</html>
